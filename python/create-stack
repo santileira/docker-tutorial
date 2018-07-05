@@ -1,0 +1,5 @@
+docker-machine ls
+eval $(docker-machine env myvm1)
+docker stack deploy -c docker-compose.yml getstarted
+docker-machine ls
+http://192.168.99.102:8080 ## Google
