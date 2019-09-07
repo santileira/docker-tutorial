@@ -44,5 +44,20 @@ ex: `docker run -d -p 4040:80 friendmyhello`
 
 ex: `docker container stop c7efb717299f`
 
+## Log in to the Docker public registry on your local machine
+
+`docker login`
+
+## Tag image
+
+`docker tag <image name> <username>/<repository>:<tag>`
+
+ex: `docker tag friendmyhello sleira/get-started:part2`
+
+## Push image
+
+`docker push <username>/<repository>:<tag>`
+
+ex: `docker push sleira/get-started:part2`
 
 
