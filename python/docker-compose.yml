@@ -1,16 +1,16 @@
 version: "3"
 services:
-  web:
+  web: # name of the service
     # replace username/repo:tag with your name and image details
     image: sleira/get-started:part3
     deploy:
-      replicas: 5
+      replicas: 5 # run five instances
       resources:
         limits:
           cpus: "0.1"
           memory: 50M
       restart_policy:
-        condition: on-failure
+        condition: on-failure # Immediately restart containers if one fails.
     ports:
       - "4000:80"
     networks:
