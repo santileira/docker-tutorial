@@ -17,4 +17,5 @@ EXPOSE 80
 ENV NAME World
 
 # Run app.py when the container launches
+# CMD is a Docker run-time operation, meaning it’s not something that gets executed at build time. It happens when you run an image
 CMD ["python", "app.py"]
