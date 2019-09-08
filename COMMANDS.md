@@ -60,4 +60,40 @@ ex: `docker tag friendmyhello sleira/get-started:part2`
 
 ex: `docker push sleira/get-started:part2`
 
+## Run your new load-balanced app
 
+`docker stack deploy -c <docker-compose-file> <name>`
+
+ex: `docker stack deploy -c docker-compose.yml getstartedlab`
+
+## List of apps/stacks
+
+`docker stack ls`
+
+## List of running services associated with an app 
+
+`docker service ls`
+
+if you want to search one service you can run:
+
+`docker stack services <service-name>`
+
+ex: `docker stack services getstartedlab`
+
+## List of tasks by service name
+
+A single container running in a service is called a `task`.
+
+`docker service ps <service-name>`
+
+ex: `docker service ps getstartedlab_web`
+
+## Inspect task or container
+
+`docker inspect <task id or container id>`
+
+## Tear down an application
+
+`docker stack rm <app-name>`
+
+ex: `docker stack rm getstartedlab`
