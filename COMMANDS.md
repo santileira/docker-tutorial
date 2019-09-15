@@ -20,7 +20,7 @@ ex: `docker run hello-world`
 
 ## Build an image
 
-`docker build --tag=<name> <path where dockerfile is>`
+`docker build --tag=<image-name> <path where dockerfile is>`
 
 ex: ` docker build --tag=friendmyhello /Users/sleira/Personal/Projects/docker-tutorial/python`
 
@@ -134,6 +134,6 @@ ex: `docker-machine ssh myvm1 "docker node ls"`
 
 ## Leave swarm
 
-`docker swarm leave --force`
+`docker swarm leave --force`    
 
 
