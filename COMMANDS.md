@@ -134,6 +134,14 @@ ex: `docker-machine ssh myvm1 "docker node ls"`
 
 ## Leave swarm
 
-`docker swarm leave --force`    
+`docker swarm leave --force`
+
+## Configure your shell to talk with the virtual machine
+
+Run the next command to get the command to configure your shell to talk with the virtual machine.
+ 
+`docker-machine env <virtual-machine-name>`
+
+ex: `docker-machine env myvm1`    
 
 
